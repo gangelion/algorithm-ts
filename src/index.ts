@@ -1,6 +1,9 @@
 import readline from 'readline'
 import { Bubble } from './sort/bubble'
 import { AbstractAlgorithm } from './abstract-algorithm'
+import {Measure} from "./utils/measure";
+
+const measure = new Measure('Measure', 'Start', 'End')
 
 const main = (input: number) => {
   let instance = {} as AbstractAlgorithm
@@ -15,7 +18,10 @@ const main = (input: number) => {
     }
   }
   console.log('Before', original)
+  measure.start()
   console.log('After', instance.exec())
+  measure.end()
+  console.log(`${measure.getResults()[0].duration}`)
 }
 
 const reader = readline.createInterface({
