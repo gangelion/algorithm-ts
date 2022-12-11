@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "format": "rome format . --write",
+    "prepare": "husky install"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
     "nodemon": "^2.0.20",
     "rome": "^11.0.0",
     "ts-node": "^10.9.1",
