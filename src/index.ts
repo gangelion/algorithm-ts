@@ -1,7 +1,7 @@
 import readline from 'readline'
 import { Bubble } from './sort/bubble'
 import { AbstractAlgorithm } from './abstract-algorithm'
-import {Measure} from "./utils/measure";
+import { Measure } from './utils/measure'
 
 const measure = new Measure('Measure', 'Start', 'End')
 

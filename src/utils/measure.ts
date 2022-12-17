@@ -14,13 +14,9 @@ export class Measure {
   }
   public end = () => {
     performance.mark(this._endMark)
-    performance.measure(
-      this._measureName,
-      this._startMark,
-      this._endMark
-    )
+    performance.measure(this._measureName, this._startMark, this._endMark)
   }
   public getResults = () => {
-    return performance.getEntriesByName(this._measureName);
+    return performance.getEntriesByName(this._measureName)
   }
 }
