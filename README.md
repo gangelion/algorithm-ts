@@ -4,7 +4,7 @@ This is for implementing the basic algorithms using typescript.
 ## Algorithms
 - Sort
   - *Bubble sort (バブルソート)
-  - Selection sort (選択ソート)
+  - *Selection sort (選択ソート)
   - Insertion sort (挿入ソート)
 
 ## Setup
@@ -12,4 +12,9 @@ This is for implementing the basic algorithms using typescript.
 
 ```bash
 yarn dev
+```
+
+## Test
+```bash
+yarn test
 ```
