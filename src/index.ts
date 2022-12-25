@@ -2,6 +2,7 @@ import readline from 'readline'
 import { Bubble, Selection } from './sort/index'
 import { AbstractAlgorithm } from './abstract-algorithm'
 import { Measure } from './utils/measure'
+import { Insertion } from './sort/insertion'
 
 const measure = new Measure('Measure', 'Start', 'End')
 
@@ -14,6 +15,9 @@ const main = (input: number) => {
       break
     case 2:
       instance = new Selection(original)
+      break
+    case 3:
+      instance = new Insertion(original)
       break
     default: {
       console.log('Invalid input')
@@ -31,7 +35,7 @@ const reader = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 })
-const query = 'Please type number >\n1: Bubble sort\n2: Selection sort\n'
+const query = 'Please type number >\n1: Bubble sort\n2: Selection sort\n3: Insertion sort\n'
 reader.question(query, (inputString) => {
   const input = Number(inputString)
   main(input)
