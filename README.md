@@ -5,7 +5,7 @@ This is for implementing the basic algorithms using typescript.
 - Sort
   - *Bubble sort (バブルソート)
   - *Selection sort (選択ソート)
-  - Insertion sort (挿入ソート)
+  - *Insertion sort (挿入ソート)
 
 ## Setup
 - Start node using nodemon
