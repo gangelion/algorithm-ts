@@ -1,8 +1,7 @@
 import readline from 'readline'
-import { Bubble, Selection } from './sort/index'
+import { Bubble, Selection, Insertion } from './sort/index'
 import { AbstractAlgorithm } from './abstract-algorithm'
 import { Measure } from './utils/measure'
-import { Insertion } from './sort/insertion'
 
 const measure = new Measure('Measure', 'Start', 'End')
 
